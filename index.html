@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"
+    <title>Matcha Madness</title>
+</head>
+<body>
+<header>
+    <h2 class="title">Where Madness meets the Matcha</h2>
+    <h2 class = "title">Matcha Madness</h2>
+</header>
+<main>
+
+<div class="productDisplay">
+    <div id=productOne>
+        <img src="C:\Users\thoma\OneDrive\Desktop\GIT 417 Adv Web Markup and Scripting\Images\img_1.jpg" alt="Milk Matcha">
+    </div>
+
+    <div id="productTwo">
+        <img src="C:\Users\thoma\OneDrive\Desktop\GIT 417 Adv Web Markup and Scripting\Images\img_2.jpg" alt="Strawberry Matcha">
+    </div>
+
+    <div id="productThree">
+        <img src="C:\Users\thoma\OneDrive\Desktop\GIT 417 Adv Web Markup and Scripting\Images\img_3.jpg" alt="Ube Matcha">
+    </div>
+</div>
+
+<div class="randomGame">
+    <form id="guess-form">
+        <label for="user-guess">Enter a number between 1 and 100:</label><br>
+        <input type="number" id="user-guess" name="user-guess" min="1" max="100" required><br><br>
+        <input type="submit" value="Submit Guess">
+    </form>
+</div>
+
+
+
+
+
+
+
+
+</main>
+<footer>
+<form action="/submit" method="post">
+  <label for="fullname">Full Name:</label><br>
+  <input type="text" id="fullname" name="fullname" required><br><br>
+
+  <label for="phone">Phone Number:</label><br>
+  <input type="tel" id="phone" name="phone"><br><br>
+
+  <label for="email">Email Address:</label><br>
+  <input type="email" id="email" name="email"><br><br>
+
+  <label for="comments">Comments:</label><br>
+  <textarea id="comments" name="comments" rows="4" cols="40"></textarea><br><br>
+
+  <label>Preferred Contact Method:</label><br>
+  <input type="radio" id="contact-phone" name="contact_method" value="phone">
+  <label for="contact-phone">Phone</label><br>
+  <input type="radio" id="contact-email" name="contact_method" value="email">
+  <label for="contact-email">Email</label><br><br>
+  <div class="errors"></div>  
+  <input type="submit" value="Submit">
+</form>
+
+</footer>
+</body>
+</html>
