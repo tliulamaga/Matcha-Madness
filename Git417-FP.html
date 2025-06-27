@@ -63,10 +63,14 @@
   <textarea id="comments" name="comments" rows="4" cols="40"></textarea><br><br>
 
   <label>Preferred Contact Method:</label><br>
+  <div class="radio-group">
   <input type="radio" id="contact-phone" name="contact_method" value="phone">
   <label for="contact-phone">Phone</label><br>
+  </div>
+  <div class="radio-group">
   <input type="radio" id="contact-email" name="contact_method" value="email">
   <label for="contact-email">Email</label><br><br>
+</div>
   <div class="errors"></div>  
   <input type="submit" value="Submit">
 </form>
