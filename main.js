@@ -151,7 +151,7 @@ form.onsubmit = function (e) {
     msg.style.marginTop = "1rem";
     msg.style.color = "#207f4c";
     msg.innerHTML =
-      "<h3>Thank you, " + name + "!</h3>" +
+      "<h2>Thank you, " + name + "!</h2>" +
       "<p>We'll reach out to you via <strong>" + method + "</strong>.</p>" +
       "<p>Your message: \"" + comment + "\"</p>";
 
@@ -161,6 +161,22 @@ form.onsubmit = function (e) {
 
 
 
+// Last thing: Dark Mode
+const toggleBtn = document.getElementById("mode-toggle");
+
+// Load saved mode from localStorage
+if (localStorage.getItem("theme") === "dark") {
+  document.body.classList.add("dark-mode");
+  toggleBtn.textContent = "☀️ Light Mode";
+}
+
+toggleBtn.addEventListener("click", function () {
+  document.body.classList.toggle("dark-mode");
+  const isDark = document.body.classList.contains("dark-mode");
+
+  toggleBtn.textContent = isDark ? "Light Mode" : "Dark Mode";
+  localStorage.setItem("theme", isDark ? "dark" : "light");
+});
 
 
 

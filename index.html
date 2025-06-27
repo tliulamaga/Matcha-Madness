@@ -9,15 +9,15 @@
 </head>
 <body>
 <!-- experimental for product display -->
-
+<button id="mode-toggle" class="theme-toggle">🌙 Dark Mode</button>
 <header>
-    <h2 class="title">Where Madness meets the Matcha</h2>
-    <h2 class = "title">Matcha Madness</h2>
-    <nav class="product-nav">
-        <button data-index="0">Milk Matcha</button>
-        <button data-index="1">Strawberry Matcha</button>
-        <button data-index="2">Ube Matcha</button>
-    </nav>
+    <h1 class="title">Where Madness Meets the Matcha:<br>Matcha Madness</h1>
+
+        <nav class="product-nav">
+            <button data-index="0">Milk Matcha</button>
+            <button data-index="1">Strawberry Matcha</button>
+            <button data-index="2">Ube Matcha</button>
+        </nav>
 </header>
 <main>
 
@@ -37,8 +37,8 @@
     <p>Our newest creation of ube and matcha to create a lavender matcha that is both sweet and refreshing.</p>
     </div>
 </div>
-
-<div class="randomGame">
+    <div class="randomGame">
+        <h2>Guessing Game</h2>
     <form id="guess-form">
         <label for="user-guess">Enter a number between 1 and 10:</label><br>
         <input type="number" id="user-guess" name="user-guess" min="1" max="100" required><br><br>
@@ -46,16 +46,9 @@
         <input type="submit" value="Submit Guess">
     </form>
 </div>
-
-
-
-
-
-
-
-
 </main>
 <footer>
+    <h2>Questions, Comments, or Concerns? Leave a Comment!</h2>
 <form action="/submit" method="post">
   <label for="fullname">Full Name:</label><br>
   <input type="text" id="fullname" name="fullname" required><br><br>
@@ -77,7 +70,6 @@
   <div class="errors"></div>  
   <input type="submit" value="Submit">
 </form>
-
 </footer>
 <script src="main.js" defer></script>
 </body>
