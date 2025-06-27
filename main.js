@@ -25,7 +25,7 @@ gameform.onsubmit = function (e) {
 
 
 //To grab stuff in html
-var buttons = document.getElementsByTagName("button");
+var buttons = document.querySelectorAll(".product-nav button");
 var products = document.querySelectorAll(".productDisplay > div");
 
 //hides div and only matches to button index
